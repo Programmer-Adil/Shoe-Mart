@@ -1,3 +1,41 @@
-.product {
-    padding-top: 20px;
+.card {
+    width: 100%;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background-color: white;
+    min-height: 450px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card p{
+    padding: 15px 5px;
+}
+
+.my-btn {
+    padding: 5px 15px;
+    width: 100%;
+    outline: none;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    font-weight: 700;
+}
+
+.my-btn:hover {
+    background: #fff;
+    color: black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.bi-cart-plus-fill {
+    margin-left: 10px;
 }

@@ -3,12 +3,12 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <nav className='header'>
+        <nav className="header">
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
                         <div className="logo text-start">
-                            <h3>GreenChili</h3>
+                            <h3>shoeMart</h3>
                         </div>
                     </div>
                     <div className="col-md-6">
