@@ -1,8 +1,7 @@
 import React from 'react';
-import Selected from '../Selected/Selected';
 import './Cart.css'
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, chos, reset }) => {
     let total = 0;
     for (const product of cart) {
         total = total + product.price;
@@ -17,6 +16,8 @@ const Cart = ({ cart }) => {
                     cart.map(item => <li>{item?.name}</li>)
                 }
             </ol>
+            <button onClick={() => chos()} className='cart-btn'>Choose One For Me</button>
+            <button onClick={() => reset()} className='cart-btn'>Reset</button>
         </div>
     );
 };

@@ -2,6 +2,23 @@
     background: rgb(160, 159, 159);
     min-height: 500px;
     padding-left: 5px;
+    padding-right: 5px;
     position: sticky;
     top: 0;
+}
+
+.cart-btn {
+    padding: 5px 15px;
+    width: 100%;
+    outline: none;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.cart-btn:hover {
+    background: #fff;
+    color: black;
 }

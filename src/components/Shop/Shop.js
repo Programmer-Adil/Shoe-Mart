@@ -19,9 +19,26 @@ const Shop = () => {
             setCart(newCart);
         }
         else {
-            alert('Do not added more than 4 Item')
+            alert("Can't added more than 4 Item")
         }
+
     };
+
+    const chooseBtn = () => {
+        // let new = []
+        // const ran = Math.floor(Math.random() * carts.length);
+        // new.push(carts[ran]);
+        // setCarts(new);
+        let choosen = [];
+        const choose = Math.floor(Math.random() * cart.length);
+        choosen.push(cart[choose]);
+        setCart(choosen);
+    }
+
+    const resetBtn = () => {
+        setCart([])
+    }
+
     return (
         <div className="shop">
             <div className="container">
@@ -34,7 +51,7 @@ const Shop = () => {
                         </div>
                     </div>
                     <div className="col-md-3">
-                        <Cart cart={cart}></Cart>
+                        <Cart cart={cart} chos={chooseBtn} reset={resetBtn}></Cart>
                     </div>
                 </div>
             </div>
